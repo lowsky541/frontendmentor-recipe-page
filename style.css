@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "Young Serif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+:root {
+  --black: hsl(0, 0%, 25%);
+  --soft-black: #5e5e5e;
+  --orange: #844a34;
+  --magenta: #762d4a;
+  --soft-magenta: #fff7fc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  border-radius: 25px;
+  background-color: white;
+  color: #646464;
+  font-family: "Outfit";
+  width: 100%;
+  padding: 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+@media (min-width: 1000px)  {
+  body {
+    display: flex;
+    justify-content: center;
+    background-color: #f3e5d8;
+    margin: 7em 0;
+  }
+
+  .page {
+    width: 50%;
+    padding: 3rem;
+  }
+
+  main {
+    padding: 0;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+p {
+  font-family: "Outfit";
+}
+
+h1 {
+  color: var(--black)
+}
+
+h2 {
+  color: var(--orange);
+}
+
+h1, h2 {
+  font-family: 'Young Serif';
+}
+
+b {
+  color: var(--soft-black);
+}
+
+li span {
+  position: relative;
+  left: 21px;
+}
+
+li {
+  margin: 10px 0;
+}
+
+hr {
+  border: 1px solid hsl(0, 0%, 90%);
+}
+
+.preparation-time {
+  font-family: "Outfit";
+  background-color: var(--soft-magenta);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.preparation-time ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.preparation-time li::marker {
+  color: var(--orange);
+}
+
+.preparation-time h3 {
+  color: var(--magenta);
+  margin: 0;
+}
+
+.ingredients h2 {
+  margin-bottom: 0;
+}
+
+.ingredients ul {
+  margin-top: 0;
+  padding: 20px;
+}
+
+.ingredients li::marker {
+  color: var(--orange);
+}
+
+.instructions ol {
+  padding: 25px;
+  margin-top: 0;
+}
+
+.instructions h2 {
+  margin-bottom: 0;
+}
+
+.instructions li::marker {
+  color: var(--orange);
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  padding: 15px 0;
+}
+
+td:nth-child(1) {
+  padding-left: 25px;
+}
+
+td:nth-child(2) {
+  color: #844a34;
+  font-weight: bold;
+}
+
+table tr {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+table tr:last-child {
+   border-bottom: none;
+}
+
